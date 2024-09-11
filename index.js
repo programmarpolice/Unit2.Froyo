@@ -22,11 +22,15 @@ for (let i = 0; i < froyoOrderArray.length; i++) {
   const flavor = froyoOrderArray[i]; // flavors = "coffee"
   console.log(flavor); // log coffee in the browser console
   flavorsObject[flavor] = 1; // flavorsObject = { "vanilla" : 1, "strawberry" : 1 "coffee" : 1}
-
-  // Check to see IF the flavor exist incement the flavor by one
+  if (flavorsObject[flavor]) {
+    flavorsObject[flavor] += 1;
+    //   } else {
+    //     flavorsObject[flavor] = 1;
+  }
+  // Check to see IF the flavor exist and increment the flavor by one
   // Else the flavor does not exist define it and set it to one
 }
 
 // console.log("Flavors Object BEFORE: ", flavors);
 // flavors["vanilla"] = 1;
-console.log("Flavors Object AFTER: ", flavorsObject);
+console.log("Total of each flavor: ", flavorsObject);
