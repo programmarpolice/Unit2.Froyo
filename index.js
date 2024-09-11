@@ -31,6 +31,4 @@ for (let i = 0; i < froyoOrderArray.length; i++) {
   // Else the flavor does not exist define it and set it to one
 }
 
-// console.log("Flavors Object BEFORE: ", flavors);
-// flavors["vanilla"] = 1;
 console.log("Total of each flavor: ", flavorsObject);
