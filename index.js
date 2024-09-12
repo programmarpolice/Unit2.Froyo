@@ -24,8 +24,8 @@ for (let i = 0; i < froyoOrderArray.length; i++) {
   flavorsObject[flavor] = 1; // flavorsObject = { "vanilla" : 1, "strawberry" : 1 "coffee" : 1}
   if (flavorsObject[flavor]) {
     flavorsObject[flavor] += 1;
-    //   } else {
-    //     flavorsObject[flavor] = 1;
+  } else {
+    flavorsObject[flavor] = 1;
   }
   // Check to see IF the flavor exist and increment the flavor by one
   // Else the flavor does not exist define it and set it to one
